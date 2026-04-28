@@ -82,7 +82,10 @@ export function AppointmentSection() {
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-28 bg-primary">
+    <section
+      id="contact"
+      className="py-20 lg:py-28 bg-gradient-to-br from-primary via-[oklch(0.22_0.05_248)] to-[oklch(0.18_0.035_242)]"
+    >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left - Contact Info */}
@@ -128,7 +131,7 @@ export function AppointmentSection() {
 
           {/* Right - Appointment Form */}
           <div className="animate-fade-up-delay-1">
-            <Card className="p-6 lg:p-8 bg-card shadow-xl">
+            <Card className="p-6 lg:p-8 bg-card/95 border-border/70 shadow-xl">
               <h3 className="font-serif text-2xl text-card-foreground mb-6">
                 Request Appointment
               </h3>

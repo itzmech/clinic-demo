@@ -44,7 +44,10 @@ function StarRating({ rating }: { rating: number }) {
 
 export function TestimonialsSection() {
   return (
-    <section id="reviews" className="py-20 lg:py-28 bg-background">
+    <section
+      id="reviews"
+      className="py-20 lg:py-28 bg-gradient-to-b from-background via-[oklch(0.17_0.025_245)] to-background"
+    >
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-up">
@@ -65,7 +68,7 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className={`p-6 lg:p-8 bg-card shadow-md hover:shadow-lg transition-shadow animate-fade-up-delay-${
+              className={`p-6 lg:p-8 bg-card/90 border-border/70 shadow-md hover:shadow-[0_0_30px_rgba(26,199,183,0.14)] transition-shadow animate-fade-up-delay-${
                 index + 1
               }`}
             >

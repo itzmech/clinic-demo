@@ -49,7 +49,10 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-20 lg:py-28 bg-background">
+    <section
+      id="services"
+      className="py-20 lg:py-28 bg-gradient-to-b from-background via-[oklch(0.18_0.03_248)] to-background"
+    >
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-up">
@@ -70,7 +73,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className={`service-card p-6 lg:p-8 bg-card hover:shadow-lg transition-all duration-300 cursor-pointer animate-fade-up-delay-${
+              className={`service-card p-6 lg:p-8 bg-card/90 border-border/70 hover:shadow-[0_0_30px_rgba(26,199,183,0.15)] transition-all duration-300 cursor-pointer animate-fade-up-delay-${
                 (index % 4) + 1
               }`}
             >

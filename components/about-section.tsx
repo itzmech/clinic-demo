@@ -22,12 +22,15 @@ const stats = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-20 lg:py-28 bg-secondary">
+    <section
+      id="about"
+      className="py-20 lg:py-28 bg-gradient-to-b from-secondary via-[oklch(0.22_0.035_252)] to-secondary"
+    >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left - Photo & Qualifications */}
           <div className="animate-fade-up">
-            <Card className="relative overflow-hidden bg-card shadow-xl">
+            <Card className="relative overflow-hidden bg-card/95 border-border/70 shadow-xl">
               {/* Photo Placeholder */}
               <div className="aspect-[4/5] bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
                 <div className="w-40 h-40 rounded-full bg-primary/20 flex items-center justify-center">
@@ -92,7 +95,7 @@ export function AboutSection() {
               {stats.map((stat, index) => (
                 <Card
                   key={index}
-                  className="p-6 bg-card text-center shadow-md"
+                  className="p-6 bg-card/95 border-border/70 text-center shadow-md"
                 >
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-3">
                     <stat.icon className="w-6 h-6 text-accent" />
